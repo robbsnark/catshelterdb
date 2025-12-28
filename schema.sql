@@ -76,3 +76,8 @@ FROM Cats
 WHERE Adoptable = 'YES';
 
 SELECT * FROM AdoptableCats;
+
+-- Index --
+
+CREATE INDEX idx_cats_name 
+ON Cats(CatName);
