@@ -24,18 +24,12 @@ CageNumber SMALLINT
 
 CREATE TABLE Cages (
 CageNumber SMALLINT PRIMARY KEY
-FOREIGN KEY (CageNumber) REFERENCES Cages(CageNumber)
-);
-
-'''
-CREATE TABLE Cages (
-CageNumber SMALLINT PRIMARY KEY
 );
 
 ALTER TABLE Cats
 ADD CONSTRAINT FK_Cats_Cage
 FOREIGN KEY (CageNumber) REFERENCES Cages(CageNumber);
-'''
+
 
 '''
         FOOD TABLES
